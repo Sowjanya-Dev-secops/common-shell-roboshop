@@ -4,8 +4,9 @@ source ./common.sh
 create_root
 nodejs
 app_setup
-npm_install
+
 systemd_setup
+npm_install
 start_app
 cp $SCRIPT_DIR/mongo.repo /etc/yum.repos.d/mongo.repo
 VALIDATE $? "copy mongo repo"
