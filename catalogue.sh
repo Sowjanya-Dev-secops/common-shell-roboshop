@@ -4,6 +4,7 @@ source ./common.sh
 create_root
 nodejs
 app_setup
+npm_install
 systemd_setup
 start_app
 cp $SCRIPT_DIR/mongo.repo /etc/yum.repos.d/mongo.repo

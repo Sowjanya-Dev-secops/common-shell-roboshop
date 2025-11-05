@@ -40,6 +40,8 @@ nodejs(){
     dnf install nodejs -y
     VALIDATE $? "Enable nodejs"
 
+}
+npm_install(){
     npm install
     VALIDATE $? "install dependencies"
 }
